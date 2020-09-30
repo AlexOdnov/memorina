@@ -5,6 +5,14 @@ body {
   font-weight: $font-weight-base;
 
   background-color: $bg-color-base;
+  @media #{$desktop} {
+    font-size: $font-size-base-des;
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
 }
 
 .container {
@@ -12,6 +20,17 @@ body {
   max-width: $container-width;
   padding-left: $container-padding;
   padding-right: $container-padding;
+  @media #{$tablet} {
+    padding-left: $container-padding-tab;
+    padding-right: $container-padding-tab;
+  }
+  @media #{$laptop} {
+    padding-left: $container-padding-lap;
+    padding-right: $container-padding-lap;
+  }
+  @media #{$desktop} {
+    max-width: $container-width-des;
+  }
 }
 
 .non-scrollable {

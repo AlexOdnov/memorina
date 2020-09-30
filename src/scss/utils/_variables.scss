@@ -1,50 +1,58 @@
 $color-light-1: #fff;
-$color-dark-1: #000;
-$color-accent-1: #230597;
+$color-dark-1: #73bcff;
+$color-dark-2: #cbdded;
+$color-accent-1: #91ff88;
+$color-warning-1: #fe4646;
 
 $font-color-base: $color-dark-1;
 $font-color-light: $color-light-1;
-$font-color-title: $color-dark-1;
-$font-color-link: $color-dark-1;
-$font-color-link--hover: rgba($color-dark-1, 0.6);
-$font-color-link--active: rgba($color-dark-1, 0.3);
-$font-color-btn: $color-dark-1;
-$font-color-btn--hover: $color-light-1;
-$font-color-btn--active: rgba($color-light-1, 0.3);
+$font-color-btn: $color-light-1;
+$font-color-btn--hover: $color-accent-1;
+$font-color-btn--active: rgba($color-accent-1, 0.6);
+$font-color-warn: $color-light-1;
+$font-color-warn--hover: $color-warning-1;
+$font-color-warn--active: rgba($color-warning-1, 0.6);
 
 $bg-color-base: $color-light-1;
 $bg-color-dark: $color-dark-1;
-$bg-color-btn: $color-light-1;
-$bg-color-btn--hover: $color-dark-1;
-$bg-color-btn--active: $color-dark-1;
-
-$icon-color: $color-accent-1;
-$icon-color--hover: rgba($color-accent-1, 0.6);
-$icon-color--active: rgba($color-accent-1, 0.3);
+$bg-color-btn: $color-accent-1;
+$bg-color-btn--hover: $color-light-1;
+$bg-color-btn--active: rgba($color-light-1, 0.6);
+$bg-color-warn: $color-warning-1;
+$bg-color-warn--hover: $color-light-1;
+$bg-color-warn--active: rgba($color-light-1, 0.6);
 
 $border-color: $color-dark-1;
+$border-color-btn: $color-accent-1;
+$border-color-warn: $color-warning-1;
+$border-color-btn--active: rgba($color-accent-1, 0.6);
+$border-color-warn--active: rgba($color-warning-1, 0.6);
 
-$font-base: 'Open Sans', sans-serif;
-$font-accent: 'Roboto', sans-serif;
+$font-base: 'Ubuntu', sans-serif;
 
-$font-size-base: 16px;
-$font-size-small: 0.8rem;
-$font-size-big: 1.2rem;
-$font-size-title: 2rem;
+$font-size-base: 18px;
+$font-size-base-des: 27px;
+$font-size-big: 1.33rem;
+$font-size-card: 56px;
+$font-size-card-tab: 67px;
+$font-size-card-lap: 144px;
+$font-size-btn: 36px;
 
-$font-weight-base: 400;
+$font-weight-base: 500;
 $font-weight-bold: 700;
-$font-weight-thin: 100;
 
-$container-width: 1200px;
-$container-padding: 30px;
+$container-width: 1000px;
+$container-width-des: 1340px;
+$container-padding: 10px;
+$container-padding-tab: 15px;
+$container-padding-lap: 20px;
 
 //breakpoint
 $bp-mob: 320px;
 $bp-mob-large: 480px;
-$bp-tab: 768px;
-$bp-lap: 800px;
-$bp-des: 1250px;
+$bp-tab: 480px;
+$bp-lap: 1000px;
+$bp-des: 1340px;
 
 //mobile-first media query
 $mobile: (
