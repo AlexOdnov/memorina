@@ -1,33 +1,53 @@
 .btn {
   display: inline-flex;
-  padding: 1em 2em;
+  padding: 0.25em 1em;
   align-items: center;
   justify-content: center;
 
-  font-size: $font-size-base;
+  font-size: $font-size-btn;
   font-weight: $font-weight-bold;
+  line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  color: $font-color-base;
+  color: $font-color-btn;
 
-  border: 2px solid $border-color;
+  background-color: $bg-color-btn;
+  border: 4px solid $bg-color-btn;
+  border-radius: 8px;
 
   transition: all 0.3s ease 0s;
   outline: none;
 
   &:hover,
   &:focus {
+    color: $font-color-btn--hover;
+
+    background-color: $bg-color-btn--hover;
   }
   &:active {
+    color: $font-color-btn--active;
+
+    background-color: $bg-color-btn--active;
+    border-color: $border-color-btn--active;
   }
 
-  // .btn--wide
-  &--wide {
-    width: 100%;
-  }
-  // .btn--center
-  &--center {
-    display: flex;
-    margin: 0 auto;
+  &--warning {
+    color: $font-color-warn;
+
+    background-color: $bg-color-warn;
+    border-color: $border-color-warn;
+
+    &:hover,
+    &:focus {
+      color: $font-color-warn--hover;
+
+      background-color: $bg-color-warn--hover;
+    }
+    &:active {
+      color: $font-color-warn--active;
+
+      background-color: $bg-color-warn--active;
+      border-color: $border-color-warn--active;
+    }
   }
 }

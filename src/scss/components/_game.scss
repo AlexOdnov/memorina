@@ -1,0 +1,38 @@
+.game {
+  padding-top: $container-padding;
+  padding-bottom: $container-padding;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $container-padding;
+  width: 100%;
+
+  @media #{$tablet} {
+    padding-top: $container-padding-tab;
+    padding-bottom: $container-padding-tab;
+    gap: $container-padding-tab;
+  }
+  @media #{$laptop} {
+    padding-top: $container-padding-lap;
+    padding-bottom: $container-padding-lap;
+    gap: $container-padding-lap;
+  }
+  @media #{$desktop} {
+    grid-template-columns: 900px 1fr;
+    gap: $container-padding-lap;
+  }
+
+  // .game__controls
+  &__controls {
+    @media #{$desktop} {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+  }
+  // .game__playground
+  &__playground {
+    @media #{$desktop} {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  }
+}

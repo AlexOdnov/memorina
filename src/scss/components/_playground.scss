@@ -1,0 +1,32 @@
+.playground {
+  height: 375px;
+  padding: 1px;
+
+  border-radius: 8px;
+  @media #{$tablet} {
+    height: 360px;
+  }
+  @media #{$laptop} {
+    height: 768px;
+  }
+  // .playground--covered
+  &--covered {
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: '';
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      z-index: 10;
+
+      background-color: $bg-color-dark;
+    }
+  }
+}
