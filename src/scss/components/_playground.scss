@@ -29,9 +29,11 @@
   }
   @media #{$tablet} {
     height: 360px;
+    max-height: calc(100vh - #{$container-padding-tab});
   }
   @media #{$laptop} {
     height: 768px;
+    max-height: calc(100vh - #{$container-padding-lap});
   }
   // .playground--covered
   &--covered {

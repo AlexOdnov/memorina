@@ -1,10 +1,10 @@
-<form class="controls" action="#">
+<form class="controls" action="#" name="controls">
   <p class="controls__description">Выберите количество карточек:</p>
   <div class="controls__amount">
     <input
       class="controls__radio visually-hidden"
       type="radio"
-      name="card-amount"
+      name="cardAmount"
       id="10"
       value="10"
     />
@@ -12,7 +12,7 @@
     <input
       class="controls__radio visually-hidden"
       type="radio"
-      name="card-amount"
+      name="cardAmount"
       id="12"
       value="12"
     />
@@ -20,7 +20,7 @@
     <input
       class="controls__radio visually-hidden"
       type="radio"
-      name="card-amount"
+      name="cardAmount"
       id="14"
       value="14"
     />
@@ -28,7 +28,7 @@
     <input
       class="controls__radio visually-hidden"
       type="radio"
-      name="card-amount"
+      name="cardAmount"
       id="16"
       value="16"
     />
@@ -36,7 +36,7 @@
     <input
       class="controls__radio visually-hidden"
       type="radio"
-      name="card-amount"
+      name="cardAmount"
       id="18"
       value="18"
     />
@@ -44,7 +44,7 @@
     <input
       class="controls__radio visually-hidden"
       type="radio"
-      name="card-amount"
+      name="cardAmount"
       id="20"
       value="20"
       checked
@@ -53,7 +53,13 @@
   </div>
   <label class="controls__result">
     счет
-    <input class="controls__score" type="text" readonly value="0" />
+    <input
+      class="controls__score"
+      type="text"
+      name="score"
+      readonly
+      value="2000"
+    />
   </label>
-  <button class="btn controls__btn" type="submit">старт</button>
+  <button class="btn btn--start controls__btn" type="submit"></button>
 </form>

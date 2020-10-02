@@ -109,7 +109,7 @@
   }
   // .controls__score
   &__score {
-    max-width: 56px;
+    max-width: 65px;
 
     color: $font-color-base;
     text-align: right;
@@ -118,6 +118,10 @@
     background-color: transparent;
 
     outline: none;
+
+    @media #{$desktop} {
+      max-width: 95px;
+    }
   }
   // .controls__btn
   &__btn {

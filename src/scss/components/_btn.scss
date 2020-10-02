@@ -9,29 +9,38 @@
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  color: $font-color-btn;
 
-  background-color: $bg-color-btn;
-  border: 4px solid $bg-color-btn;
   border-radius: 8px;
+  border: 4px solid;
 
   transition: all 0.3s ease 0s;
   outline: none;
 
-  &:hover,
-  &:focus {
-    color: $font-color-btn--hover;
+  &--start {
+    color: $font-color-btn;
 
-    background-color: $bg-color-btn--hover;
+    background-color: $bg-color-btn;
+    border-color: $bg-color-btn;
+
+    &:hover,
+    &:focus {
+      color: $font-color-btn--hover;
+
+      background-color: $bg-color-btn--hover;
+    }
+    &:active {
+      color: $font-color-btn--active;
+
+      background-color: $bg-color-btn--active;
+      border-color: $border-color-btn--active;
+    }
+
+    &::before {
+      content: 'старт';
+    }
   }
-  &:active {
-    color: $font-color-btn--active;
 
-    background-color: $bg-color-btn--active;
-    border-color: $border-color-btn--active;
-  }
-
-  &--warning {
+  &--stop {
     color: $font-color-warn;
 
     background-color: $bg-color-warn;
@@ -48,6 +57,10 @@
 
       background-color: $bg-color-warn--active;
       border-color: $border-color-warn--active;
+    }
+
+    &::before {
+      content: 'стоп';
     }
   }
 }

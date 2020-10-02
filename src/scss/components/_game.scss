@@ -1,6 +1,8 @@
 .game {
+  $mob-mozilla: 25px; //mobile mozilla bottom navbar height
+
   padding-top: $container-padding;
-  padding-bottom: $container-padding;
+  padding-bottom: $container-padding + $mob-mozilla;
   display: grid;
   grid-template-columns: 1fr;
   gap: $container-padding;
