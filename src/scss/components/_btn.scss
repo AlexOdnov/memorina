@@ -1,20 +1,20 @@
 .btn {
   display: inline-flex;
-  padding: 0.25em 1em;
   align-items: center;
   justify-content: center;
+  padding: 0.25em 1em;
 
-  font-size: $font-size-btn;
   font-weight: $font-weight-bold;
+  font-size: $font-size-btn;
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
 
-  border-radius: 8px;
   border: 4px solid;
+  border-radius: 8px;
+  outline: none;
 
   transition: all 0.3s ease 0s;
-  outline: none;
 
   &--start {
     color: $font-color-btn;
@@ -22,21 +22,22 @@
     background-color: $bg-color-btn;
     border-color: $bg-color-btn;
 
+    &::before {
+      content: 'старт';
+    }
+
     &:hover,
     &:focus {
       color: $font-color-btn--hover;
 
       background-color: $bg-color-btn--hover;
     }
+
     &:active {
       color: $font-color-btn--active;
 
       background-color: $bg-color-btn--active;
       border-color: $border-color-btn--active;
-    }
-
-    &::before {
-      content: 'старт';
     }
   }
 
@@ -46,21 +47,22 @@
     background-color: $bg-color-warn;
     border-color: $border-color-warn;
 
+    &::before {
+      content: 'стоп';
+    }
+
     &:hover,
     &:focus {
       color: $font-color-warn--hover;
 
       background-color: $bg-color-warn--hover;
     }
+
     &:active {
       color: $font-color-warn--active;
 
       background-color: $bg-color-warn--active;
       border-color: $border-color-warn--active;
-    }
-
-    &::before {
-      content: 'стоп';
     }
   }
 }

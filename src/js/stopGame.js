@@ -1,9 +1,9 @@
 import { btnStart } from './toggleBtn';
 import checkCard from './checkCard';
 
-const stopGame = () => {
-  if (event) {
-    event.preventDefault();
+const stopGame = (e) => {
+  if (e) {
+    e.preventDefault();
   }
 
   const playground = document.querySelector('.playground');

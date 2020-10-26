@@ -3,8 +3,8 @@ import stopGame from './stopGame';
 let prevCard = null;
 let score = document.forms.controls.score;
 
-const checkCard = () => {
-  let currentCard = event.target.closest('.card--playable');
+const checkCard = (e) => {
+  let currentCard = e.target.closest('.card--playable');
 
   if (!currentCard || currentCard.classList.contains('card--active')) {
     return;

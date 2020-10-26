@@ -3,33 +3,36 @@
 
   border-radius: 8px;
 
-  transition: all 0.3s ease 0s;
-  transform-style: preserve-3d;
   perspective: 500px;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease 0s;
 
   cursor: pointer;
+
   @media #{$tablet} {
     &:hover {
       z-index: 10;
       transform: scale(1.075);
     }
   }
-  // .card__cover
+
+  //.card__cover
   &__cover {
     width: 100%;
     height: 100%;
 
+    background: $bg-color-dark;
     border: 4px solid $bg-color-base;
     border-radius: 8px;
-    background: $bg-color-dark;
-    box-shadow: 0px 0px 0px 1px $bg-color-dark;
-
-    transition: all 1s ease 0s;
+    box-shadow: 0 0 0 1px $bg-color-dark;
     backface-visibility: hidden;
-    transform-style: preserve-3d;
+
     transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: all 1s ease 0s;
   }
-  // .card__face
+
+  //.card__face
   &__face {
     position: absolute;
     top: 0;
@@ -38,9 +41,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 13%;
     width: 100%;
     height: 100%;
+    padding-right: 13%;
 
     font-style: italic;
     font-size: $font-size-card;
@@ -48,15 +51,17 @@
     background-color: $bg-color-base;
     border: 4px solid $bg-color-dark;
     border-radius: 8px;
-    box-shadow: 0px 0px 0px 1px $bg-color-dark;
-
-    transition: transform 1s ease 0s;
+    box-shadow: 0 0 0 1px $bg-color-dark;
     backface-visibility: hidden;
-    transform-style: preserve-3d;
+
     transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: transform 1s ease 0s;
+
     @media #{$tablet} {
       font-size: $font-size-card-tab;
     }
+
     @media #{$laptop} {
       font-size: $font-size-card-lap;
     }
@@ -65,40 +70,45 @@
 
 .card--active {
   cursor: default;
+
   @media #{$tablet} {
     &:hover {
       transform: scale(1);
     }
   }
-  // .card__cover
+
+  //.card__cover
   .card__cover {
-    transition: all 1s ease 0s;
     backface-visibility: hidden;
-    transform-style: preserve-3d;
     transform: rotateY(-180deg);
-  }
-  // .card__face
-  .card__face {
-    transition: transform 1s ease 0s;
-    backface-visibility: hidden;
     transform-style: preserve-3d;
+    transition: all 1s ease 0s;
+  }
+
+  //.card__face
+  .card__face {
+    backface-visibility: hidden;
     transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: transform 1s ease 0s;
   }
 }
 
 .card--placeholder {
   cursor: default;
+
   @media #{$tablet} {
     &:hover {
       transform: scale(1);
     }
   }
-  // .card__cover
+
+  //.card__cover
   .card__cover {
     position: relative;
 
     background: $color-dark-2;
-    box-shadow: 0px 0px 0px 1px $color-dark-2;
+    box-shadow: 0 0 0 1px $color-dark-2;
 
     transform: rotateY(0deg);
 
@@ -111,20 +121,23 @@
       left: 50%;
 
       display: block;
-      height: 100%;
       width: 6px;
+      height: 100%;
 
-      border-radius: 3px;
       background-color: $bg-color-base;
+      border-radius: 3px;
     }
+
     &::before {
       transform: translate(-50%, -50%) rotate(25deg);
     }
+
     &::after {
       transform: translate(-50%, -50%) rotate(-25deg);
     }
   }
-  // .card__face
+
+  //.card__face
   .card__face {
     transform: rotateY(180deg);
   }
@@ -133,6 +146,7 @@
 .card--placeholder-14 {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+
   @media #{$tablet} {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
@@ -142,6 +156,7 @@
 .card--placeholder-18 {
   grid-column: 2 / 4;
   grid-row: 3 / 4;
+
   @media #{$tablet} {
     grid-column: 3 / 4;
     grid-row: 2 / 4;

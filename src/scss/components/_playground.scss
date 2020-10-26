@@ -1,96 +1,113 @@
 .playground {
   position: relative;
 
-  height: 375px;
-  padding: 1px;
   display: grid;
   gap: 2px;
 
+  height: 375px;
+  padding: 1px;
+
   border-radius: 8px;
+
   &::before {
     content: '';
 
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
 
     display: block;
     width: 100%;
     height: 100%;
 
-    z-index: 10;
-    opacity: 0;
-    pointer-events: none;
-
     background-color: $bg-color-dark;
     border-radius: 8px;
+    opacity: 0;
 
     transition: opacity 0.3s ease 0s;
+
+    pointer-events: none;
   }
+
   @media #{$tablet} {
     height: 360px;
     max-height: calc(100vh - #{$container-padding-tab});
   }
+
   @media #{$laptop} {
     height: 768px;
     max-height: calc(100vh - #{$container-padding-lap});
   }
-  // .playground--covered
+
+  //.playground--covered
   &--covered {
     &::before {
       opacity: 1;
       pointer-events: initial;
     }
   }
-  // .playground--10
+
+  //.playground--10
   &--10 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
+
     @media #{$tablet} {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(2, 1fr);
     }
   }
-  // .playground--12
+
+  //.playground--12
   &--12 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
+
     @media #{$tablet} {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(4, 1fr);
     }
   }
-  // .playground--14
+
+  //.playground--14
   &--14 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
+
     @media #{$tablet} {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(3, 1fr);
     }
   }
-  // .playground--16
+
+  //.playground--16
   &--16 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
+
     @media #{$tablet} {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(4, 1fr);
     }
   }
-  // .playground--18
+
+  //.playground--18
   &--18 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
+
     @media #{$tablet} {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(4, 1fr);
     }
   }
-  // .playground--20
+
+  //.playground--20
   &--20 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
+
     @media #{$tablet} {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(4, 1fr);

@@ -3,8 +3,8 @@ import fillPlayground from './fillPlayground';
 import createPlaceholder from './createPlaceholder';
 import checkCard from './checkCard';
 
-const startGame = () => {
-  event.preventDefault();
+const startGame = (e) => {
+  e.preventDefault();
 
   const playground = document.querySelector('.playground');
   const amount = document.forms.controls.cardAmount.value;

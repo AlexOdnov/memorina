@@ -1,10 +1,11 @@
 html {
-  color: $font-color-base;
   font-family: $font-base;
-  font-size: $font-size-base;
   font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  color: $font-color-base;
 
   background-color: $bg-color-base;
+
   @media #{$desktop} {
     font-size: $font-size-base-des;
   }
@@ -16,18 +17,21 @@ main {
 }
 
 .container {
-  margin: 0 auto;
   max-width: $container-width;
-  padding-left: $container-padding;
+  margin: 0 auto;
   padding-right: $container-padding;
+  padding-left: $container-padding;
+
   @media #{$tablet} {
-    padding-left: $container-padding-tab;
     padding-right: $container-padding-tab;
+    padding-left: $container-padding-tab;
   }
+
   @media #{$laptop} {
-    padding-left: $container-padding-lap;
     padding-right: $container-padding-lap;
+    padding-left: $container-padding-lap;
   }
+
   @media #{$desktop} {
     max-width: $container-width-des;
   }
@@ -44,13 +48,13 @@ input[type='radio'].visually-hidden {
 
   width: 1px;
   height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
 
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
   overflow: hidden;
+
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
 }

@@ -1,36 +1,39 @@
 .game {
   $mob-mozilla: 25px; //mobile mozilla bottom navbar height
 
-  padding-top: $container-padding;
-  padding-bottom: $container-padding + $mob-mozilla;
   display: grid;
   grid-template-columns: 1fr;
   gap: $container-padding;
   width: 100%;
+  padding-top: $container-padding;
+  padding-bottom: $container-padding + $mob-mozilla;
 
   @media #{$tablet} {
+    gap: $container-padding-tab;
     padding-top: $container-padding-tab;
     padding-bottom: $container-padding-tab;
-    gap: $container-padding-tab;
   }
+
   @media #{$laptop} {
+    gap: $container-padding-lap;
     padding-top: $container-padding-lap;
     padding-bottom: $container-padding-lap;
-    gap: $container-padding-lap;
   }
+
   @media #{$desktop} {
     grid-template-columns: 960px 1fr;
     gap: $container-padding-lap;
   }
 
-  // .game__controls
+  //.game__controls
   &__controls {
     @media #{$desktop} {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
     }
   }
-  // .game__playground
+
+  //.game__playground
   &__playground {
     @media #{$desktop} {
       grid-column: 1 / 2;

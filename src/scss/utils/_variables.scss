@@ -1,9 +1,11 @@
+//color
 $color-light-1: #fff;
 $color-dark-1: #73bcff;
 $color-dark-2: #cbdded;
 $color-accent-1: #91ff88;
 $color-warning-1: #fe4646;
 
+//font-color
 $font-color-base: $color-dark-1;
 $font-color-light: $color-light-1;
 $font-color-btn: $color-light-1;
@@ -13,6 +15,7 @@ $font-color-warn: $color-light-1;
 $font-color-warn--hover: $color-warning-1;
 $font-color-warn--active: rgba($color-warning-1, 0.6);
 
+//background
 $bg-color-base: $color-light-1;
 $bg-color-dark: $color-dark-1;
 $bg-color-btn: $color-accent-1;
@@ -22,14 +25,17 @@ $bg-color-warn: $color-warning-1;
 $bg-color-warn--hover: $color-light-1;
 $bg-color-warn--active: rgba($color-light-1, 0.6);
 
+//border
 $border-color: $color-dark-1;
 $border-color-btn: $color-accent-1;
 $border-color-warn: $color-warning-1;
 $border-color-btn--active: rgba($color-accent-1, 0.6);
 $border-color-warn--active: rgba($color-warning-1, 0.6);
 
+//font-family
 $font-base: 'Ubuntu', sans-serif;
 
+//font-size
 $font-size-base: 18px;
 $font-size-base-des: 27px;
 $font-size-big: 1.33rem;
@@ -38,9 +44,11 @@ $font-size-card-tab: 67px;
 $font-size-card-lap: 144px;
 $font-size-btn: 36px;
 
+//font-weight
 $font-weight-base: 500;
 $font-weight-bold: 700;
 
+//container
 $container-width: 1000px;
 $container-width-des: 1340px;
 $container-padding: 10px;
@@ -85,5 +93,5 @@ $d-laptop: (
   max-width: $bp-des,
 );
 
-// $gradient-base: ;
-// $gradient-alt: ;
+//$gradient-base: ;
+//$gradient-alt: ;
