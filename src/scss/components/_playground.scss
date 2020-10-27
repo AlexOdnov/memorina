@@ -32,12 +32,12 @@
 
   @media #{$tablet} {
     height: 360px;
-    max-height: calc(100vh - #{$container-padding-tab});
   }
 
   @media #{$laptop} {
-    height: 768px;
-    max-height: calc(100vh - #{$container-padding-lap});
+    height: calc(100vh - #{$container-padding-lap} * 2);
+    min-height: 550px;
+    max-height: 768px;
   }
 
   //.playground--covered

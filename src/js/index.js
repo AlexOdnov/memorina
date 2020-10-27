@@ -1,5 +1,3 @@
-import startGame from './startGame';
+import { Game } from './Game';
 
-const btn = document.querySelector('.btn');
-
-btn.addEventListener('click', startGame);
+const game = new Game();

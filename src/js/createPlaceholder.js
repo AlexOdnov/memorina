@@ -1,9 +1,4 @@
-const createPlaceholder = (amount) => {
-  if (amount !== '14' && amount !== '18') {
-    return;
-  }
-
-  const playground = document.querySelector('.playground');
+export const createPlaceholder = (amount) => {
   const placeholder = document.createElement('div');
 
   placeholder.insertAdjacentHTML(
@@ -12,13 +7,11 @@ const createPlaceholder = (amount) => {
   );
   placeholder.className = 'card card--placeholder';
 
-  if (amount === '14') {
+  if (amount === 14) {
     placeholder.classList.add('card--placeholder-14');
-  } else if (amount === '18') {
+  } else if (amount === 18) {
     placeholder.classList.add('card--placeholder-18');
   }
 
-  playground.append(placeholder);
+  return placeholder;
 };
-
-export default createPlaceholder;

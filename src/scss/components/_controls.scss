@@ -2,7 +2,7 @@
   display: grid;
   grid-auto-rows: 62px;
   grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
-  gap: 5px;
+  gap: 10px;
 
   @media #{$desktop} {
     grid-auto-rows: 85px;
@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 9%;
+    column-gap: 6%;
     row-gap: 6px;
     padding: 0;
 
@@ -39,7 +39,7 @@
   &__label {
     position: relative;
 
-    width: 21%;
+    width: 24%;
     padding-left: 33px;
 
     cursor: pointer;

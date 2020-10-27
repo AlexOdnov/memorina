@@ -7,6 +7,7 @@
   width: 100%;
   padding-top: $container-padding;
   padding-bottom: $container-padding + $mob-mozilla;
+  overflow-y: hidden;
 
   @media #{$tablet} {
     gap: $container-padding-tab;
